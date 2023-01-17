@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QgP-Ch-fC6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Odev1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5c8-vF-3wf">
+                                <rect key="frame" x="20" y="108" width="374" height="734"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="NMC-CK-ro0">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="180.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Info" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8P-MI-yw7">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDM-iW-sJh">
+                                                <rect key="frame" x="0.0" y="50.5" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="RCb-Fy-O51"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foundation Year: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvy-ck-NfW">
+                                                <rect key="frame" x="0.0" y="130.5" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="WtB-0S-Aky"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="102" translatesAutoresizingMaskIntoConstraints="NO" id="YBz-8V-MFw">
+                                        <rect key="frame" x="0.0" y="200.5" width="374" height="533.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="N6J-rr-W9O">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="117"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Budget: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSE-yr-oFe">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="dVE-jr-eCD"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ST5-t7-f1Z">
+                                                        <rect key="frame" x="0.0" y="52" width="374" height="65"/>
+                                                        <color key="backgroundColor" red="1" green="0.0" blue="0.1407921208" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="65" id="L4F-gI-m8Y"/>
+                                                        </constraints>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Pay Salary💵">
+                                                            <fontDescription key="titleFontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="paySalary:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E0J-UB-hBp"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="74" translatesAutoresizingMaskIntoConstraints="NO" id="vdg-iB-tOS">
+                                                <rect key="frame" x="0.0" y="219" width="374" height="102.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uuF-8J-v2l">
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="70"/>
+                                                        <color key="backgroundColor" red="0.21442358959999999" green="0.75724561930000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="150" id="CWO-EE-fKB"/>
+                                                            <constraint firstAttribute="height" constant="70" id="nSF-hE-kf4"/>
+                                                        </constraints>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="Add Worker">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="15" name="Helvetica"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="addWorker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a4b-F1-3SH"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7h-dq-7f8">
+                                                        <rect key="frame" x="224" y="0.0" width="150" height="70"/>
+                                                        <color key="backgroundColor" red="0.21442358959999999" green="0.75724561930000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Sn9-SJ-txs"/>
+                                                            <constraint firstAttribute="height" constant="70" id="V8A-2h-YBh"/>
+                                                        </constraints>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="List Worker">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="15" name="Helvetica"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="listWorker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SIK-2E-aiE"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nat-wn-yQO">
+                                                <rect key="frame" x="0.0" y="423.5" width="374" height="110"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Income or Expense💸" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xy7-PV-3ia">
+                                                        <rect key="frame" x="87" y="0.0" width="200.5" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="ANd-vh-3by"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="114" translatesAutoresizingMaskIntoConstraints="NO" id="DtL-Y9-EUp">
+                                                        <rect key="frame" x="30" y="60" width="314" height="50"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v3d-nw-vb3">
+                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="dXa-oj-Sag"/>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="wvA-9l-73L"/>
+                                                                </constraints>
+                                                                <color key="tintColor" systemColor="labelColor"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Income💸"/>
+                                                                <connections>
+                                                                    <action selector="income:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jCb-JG-qSh"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FrK-GI-1g6">
+                                                                <rect key="frame" x="214" y="0.0" width="100" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="Xne-42-haC"/>
+                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="tsA-31-Ir0"/>
+                                                                </constraints>
+                                                                <color key="tintColor" systemColor="labelColor"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Expense💸"/>
+                                                                <connections>
+                                                                    <action selector="expense:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AXl-AA-5cD"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5c8-vF-3wf" secondAttribute="bottom" constant="20" id="LLc-JP-GyR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5c8-vF-3wf" secondAttribute="trailing" constant="20" id="Wlb-iv-okx"/>
+                            <constraint firstItem="5c8-vF-3wf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="o4v-42-rrW"/>
+                            <constraint firstItem="5c8-vF-3wf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="sIb-IA-dvR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WdA-wf-z5S"/>
+                    <connections>
+                        <outlet property="budgetLabel" destination="cSE-yr-oFe" id="PwF-G6-2yD"/>
+                        <outlet property="companyFoundationYearLabel" destination="hvy-ck-NfW" id="rL5-hK-M6h"/>
+                        <outlet property="companyInfoLabel" destination="u8P-MI-yw7" id="hyr-up-hc6"/>
+                        <outlet property="companyNameLabel" destination="jDM-iW-sJh" id="O0a-pU-zqQ"/>
+                        <outlet property="incomeOrExpenseText" destination="xy7-PV-3ia" id="oH7-D2-aM5"/>
+                        <segue destination="Nn3-CV-ilo" kind="show" identifier="toAddWorker" id="yWN-5O-4sV"/>
+                        <segue destination="Dqt-zU-cws" kind="show" identifier="toListWorker" id="yS5-6n-DYK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2789.8550724637685" y="91.741071428571431"/>
+        </scene>
+        <!--List Worker View Controller-->
+        <scene sceneID="HuY-D8-oGa">
+            <objects>
+                <viewController id="Dqt-zU-cws" customClass="ListWorkerViewController" customModule="Odev1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dZB-hG-N4C">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="McL-it-OAi">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Kpj-vz-CgM">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </tableView>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="c3o-pm-dAE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="c3o-pm-dAE" firstAttribute="trailing" secondItem="McL-it-OAi" secondAttribute="trailing" id="1iw-4J-x6d"/>
+                            <constraint firstItem="c3o-pm-dAE" firstAttribute="bottom" secondItem="McL-it-OAi" secondAttribute="bottom" id="RDZ-9g-CHM"/>
+                            <constraint firstItem="McL-it-OAi" firstAttribute="leading" secondItem="c3o-pm-dAE" secondAttribute="leading" id="TUi-JV-AvR"/>
+                            <constraint firstItem="McL-it-OAi" firstAttribute="top" secondItem="c3o-pm-dAE" secondAttribute="top" id="iPZ-Wi-5Sf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Chb-1P-QCL"/>
+                    <connections>
+                        <outlet property="workerListTableView" destination="McL-it-OAi" id="enm-0w-tqW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XQQ-gy-lR9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3570" y="338"/>
+        </scene>
+        <!--Add Worker View Controller-->
+        <scene sceneID="AZz-xr-2CF">
+            <objects>
+                <viewController id="Nn3-CV-ilo" customClass="AddWorkerViewController" customModule="Odev1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Shj-Kc-dqe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="82" translatesAutoresizingMaskIntoConstraints="NO" id="Fhu-on-X4S">
+                                <rect key="frame" x="20" y="108" width="374" height="536"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="9yp-wY-Qun">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="162"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4sJ-wO-8t1">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lf7-pi-tof">
+                                                <rect key="frame" x="0.0" y="64" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Worker Level" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a9n-sp-vRx">
+                                                <rect key="frame" x="0.0" y="128" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xtq-oV-G5K">
+                                        <rect key="frame" x="0.0" y="244" width="374" height="60"/>
+                                        <color key="backgroundColor" red="1" green="0.89466162100000002" blue="0.90727491059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="dBd-QD-fYR"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Add Worker🙋🏽‍♀️🙋🏽‍♂️"/>
+                                        <connections>
+                                            <action selector="addWorkerToCompany:" destination="Nn3-CV-ilo" eventType="touchUpInside" id="rqs-i8-b7X"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="1iZ-8R-3oW">
+                                        <rect key="frame" x="0.0" y="386" width="374" height="150"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhf-1H-9xm">
+                                                <rect key="frame" x="110.5" y="0.0" width="153" height="79.5"/>
+                                                <color key="backgroundColor" red="0.72935454259999999" green="0.82455935000000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Salary Calculation">
+                                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="salaryCalculation:" destination="Nn3-CV-ilo" eventType="touchUpInside" id="cdd-Hy-CIk"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salary: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzW-w5-8BO">
+                                                <rect key="frame" x="159" y="129.5" width="56.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="87q-vR-2YB"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DeN-n4-ct9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Fhu-on-X4S" firstAttribute="top" secondItem="DeN-n4-ct9" secondAttribute="top" constant="20" id="Vws-zq-VnJ"/>
+                            <constraint firstItem="DeN-n4-ct9" firstAttribute="trailing" secondItem="Fhu-on-X4S" secondAttribute="trailing" constant="20" id="qx9-nA-wiQ"/>
+                            <constraint firstItem="Fhu-on-X4S" firstAttribute="leading" secondItem="DeN-n4-ct9" secondAttribute="leading" constant="20" id="uLf-G8-h2d"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7F1-Ph-DwS"/>
+                    <connections>
+                        <outlet property="salaryLabel" destination="lzW-w5-8BO" id="myZ-eG-beX"/>
+                        <outlet property="workerAgeLabel" destination="Lf7-pi-tof" id="d7b-jw-M0z"/>
+                        <outlet property="workerLevelLabel" destination="a9n-sp-vRx" id="SIM-aJ-VlV"/>
+                        <outlet property="workerNameLabel" destination="4sJ-wO-8t1" id="275-da-hcK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gcK-r4-LYL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3570" y="-305"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ie1-4o-Wpw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QgP-Ch-fC6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jj8-Pb-kqR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zDy-Le-S64"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nXX-0k-kZE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1933" y="92"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

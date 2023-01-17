@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9bB-8l-mVD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--List View Controller-->
+        <scene sceneID="sO8-pz-vMe">
+            <objects>
+                <viewController id="rot-v2-d43" customClass="ListViewController" customModule="Odev2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FzQ-g9-Ifp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Tmr-AQ-8ok">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kZP-NK-lTJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kZP-NK-lTJ" firstAttribute="bottom" secondItem="Tmr-AQ-8ok" secondAttribute="bottom" id="F8F-E8-zBn"/>
+                            <constraint firstItem="kZP-NK-lTJ" firstAttribute="trailing" secondItem="Tmr-AQ-8ok" secondAttribute="trailing" id="YGL-bb-ezK"/>
+                            <constraint firstItem="Tmr-AQ-8ok" firstAttribute="top" secondItem="kZP-NK-lTJ" secondAttribute="top" id="aON-4R-s9Q"/>
+                            <constraint firstItem="Tmr-AQ-8ok" firstAttribute="leading" secondItem="kZP-NK-lTJ" secondAttribute="leading" id="gZ9-30-eDw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7Wb-n5-H5W"/>
+                    <connections>
+                        <outlet property="listTableView" destination="Tmr-AQ-8ok" id="A3e-qt-lyu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V25-n6-mWM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="542" y="785"/>
+        </scene>
+        <!--Take Animal Caregiver View Controller-->
+        <scene sceneID="2xt-ik-oP6">
+            <objects>
+                <viewController id="lQ5-Vg-eIZ" customClass="TakeAnimalCaregiverViewController" customModule="Odev2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YLt-TI-9st">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="YaZ-hJ-QCr">
+                                <rect key="frame" x="20" y="108" width="374" height="734"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2VJ-nU-gys">
+                                        <rect key="frame" x="27" y="0.0" width="320" height="255"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4q5-x8-Mad">
+                                                <rect key="frame" x="139.5" y="0.0" width="41.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xjK-Cr-KVL">
+                                                <rect key="frame" x="0.0" y="40.5" width="320" height="214.5"/>
+                                            </pickerView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="255" id="cSp-DU-S5n"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rN-UJ-JQi">
+                                        <rect key="frame" x="87" y="295" width="200" height="144"/>
+                                        <color key="backgroundColor" red="1" green="0.89466162095394952" blue="0.90727491055247289" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="qTE-n0-N1f"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Match">
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="21"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="addZooAnimalCaregiver:" destination="lQ5-Vg-eIZ" eventType="touchUpInside" id="hKe-mq-adK"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BIl-y7-xff">
+                                        <rect key="frame" x="27" y="479" width="320" height="255"/>
+                                        <subviews>
+                                            <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wxf-KG-jDU">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                                            </pickerView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSq-VO-DmB">
+                                                <rect key="frame" x="139.5" y="236" width="41.5" height="19"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="255" id="7ni-SI-7cU"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Df0-xX-v6I"/>
+                        <color key="backgroundColor" red="1" green="0.96093327634209724" blue="0.96148185404992093" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Df0-xX-v6I" firstAttribute="bottom" secondItem="YaZ-hJ-QCr" secondAttribute="bottom" constant="20" id="X3X-zf-cox"/>
+                            <constraint firstItem="Df0-xX-v6I" firstAttribute="trailing" secondItem="YaZ-hJ-QCr" secondAttribute="trailing" constant="20" id="b1d-G9-ELU"/>
+                            <constraint firstItem="YaZ-hJ-QCr" firstAttribute="top" secondItem="Df0-xX-v6I" secondAttribute="top" constant="20" id="fb6-Bh-f0x"/>
+                            <constraint firstItem="YaZ-hJ-QCr" firstAttribute="leading" secondItem="Df0-xX-v6I" secondAttribute="leading" constant="20" id="kBP-gk-1jb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pa1-zX-7RP"/>
+                    <connections>
+                        <outlet property="animalLabel" destination="4q5-x8-Mad" id="c0U-cQ-Gvr"/>
+                        <outlet property="animalPicker" destination="xjK-Cr-KVL" id="mLV-Ot-tvp"/>
+                        <outlet property="caregiverLabel" destination="mSq-VO-DmB" id="6c8-kV-bGK"/>
+                        <outlet property="caregiverPicker" destination="wxf-KG-jDU" id="XFC-Kg-tHz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y4i-tB-5YI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1378.2608695652175" y="758.70535714285711"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Odev2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="0Df-Oy-lWr">
+                                <rect key="frame" x="10" y="98" width="394" height="754"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lovely Zoo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDg-i8-6WF">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="151"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="110" id="ywD-5I-TxG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="9kk-pp-CCp">
+                                        <rect key="frame" x="0.0" y="201" width="394" height="151"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pWV-Cb-u8h">
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="40.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Budget" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNV-ca-gEd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="197" height="40.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8EQ-H5-vzE">
+                                                        <rect key="frame" x="197" y="0.0" width="197" height="40.5"/>
+                                                        <color key="backgroundColor" red="1" green="0.0" blue="0.14079212079847458" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Pay Salary💸">
+                                                            <fontDescription key="titleFontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="paySalaryButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pRW-th-wPi"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Income or Expense💵" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c6B-Lz-LOv">
+                                                <rect key="frame" x="0.0" y="55.5" width="394" height="39.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="h9H-kG-JNK">
+                                                <rect key="frame" x="0.0" y="110" width="394" height="41"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="siU-Ow-627">
+                                                        <rect key="frame" x="0.0" y="0.0" width="192" height="41"/>
+                                                        <color key="backgroundColor" red="0.0" green="1" blue="0.097714149764354996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Income💵"/>
+                                                        <connections>
+                                                            <action selector="incomeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6mD-ms-wdp"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFT-WF-kJs">
+                                                        <rect key="frame" x="202" y="0.0" width="192" height="41"/>
+                                                        <color key="backgroundColor" red="1" green="0.0" blue="0.1407921208" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Expense💵"/>
+                                                        <connections>
+                                                            <action selector="expenseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uuy-0M-vyt"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="3LD-Ej-nY6">
+                                        <rect key="frame" x="0.0" y="402" width="394" height="151"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Water Limit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHb-Vg-ewg">
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="23"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Water Limit💧" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qOC-jE-kO3">
+                                                <rect key="frame" x="0.0" y="47" width="394" height="38.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rUh-eJ-fPk">
+                                                <rect key="frame" x="0.0" y="109.5" width="394" height="41.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igb-Nl-GJ7">
+                                                        <rect key="frame" x="0.0" y="0.0" width="192" height="41.5"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.71330878458191915" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Add💧"/>
+                                                        <connections>
+                                                            <action selector="addWaterLimitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qTq-bT-kTu"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbl-4k-uod">
+                                                        <rect key="frame" x="202" y="0.0" width="192" height="41.5"/>
+                                                        <color key="backgroundColor" red="0.72935454255122623" green="0.82455935003998371" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Substraction💧"/>
+                                                        <connections>
+                                                            <action selector="substractionWaterLimitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eho-1C-CbH"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="0hl-y0-pHh">
+                                        <rect key="frame" x="0.0" y="603" width="394" height="151"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tF4-9U-Z1f">
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="31"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQ4-Se-SMc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="192" height="31"/>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Add Caregiver👩🏽‍🍼🧑🏽‍🍼"/>
+                                                        <connections>
+                                                            <action selector="addCaregiver:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gEs-1F-KU6"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMm-39-Z8F">
+                                                        <rect key="frame" x="202" y="0.0" width="192" height="31"/>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Add Animal🐈🦮"/>
+                                                        <connections>
+                                                            <action selector="addAnimal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k4q-7P-J8Z"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vKA-nW-fNl">
+                                                <rect key="frame" x="0.0" y="91" width="394" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FX9-T1-jYo">
+                                                        <rect key="frame" x="0.0" y="0.0" width="192" height="60"/>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="👩🏽‍🍼🧑🏽‍🍼List Zoo🐈🦮"/>
+                                                        <connections>
+                                                            <action selector="listAnimal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ejN-t0-zhK"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwY-Id-Sux">
+                                                        <rect key="frame" x="202" y="0.0" width="192" height="60"/>
+                                                        <color key="tintColor" systemColor="labelColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Take Animal Or Caregiver↔️" titleAlignment="center"/>
+                                                        <connections>
+                                                            <action selector="takeAnimalOrCaregiverButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mUf-pJ-0nb"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0Df-Oy-lWr" secondAttribute="bottom" constant="10" id="6fO-iY-sSc"/>
+                            <constraint firstAttribute="trailing" secondItem="0Df-Oy-lWr" secondAttribute="trailing" constant="10" id="85f-5t-qFZ"/>
+                            <constraint firstItem="0Df-Oy-lWr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="XFZ-fq-75U"/>
+                            <constraint firstItem="0Df-Oy-lWr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="caA-fa-a8y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vxj-bO-nt8"/>
+                    <connections>
+                        <outlet property="addWaterLimitText" destination="qOC-jE-kO3" id="Ek2-Lz-vTx"/>
+                        <outlet property="budgetLabel" destination="RNV-ca-gEd" id="hh7-LD-wAD"/>
+                        <outlet property="incomeOrExpenseText" destination="c6B-Lz-LOv" id="Tza-up-HfF"/>
+                        <outlet property="waterLimitLabel" destination="ZHb-Vg-ewg" id="LYC-hQ-Ts5"/>
+                        <outlet property="zooNameLabel" destination="PDg-i8-6WF" id="io1-45-hYG"/>
+                        <segue destination="El8-Di-74j" kind="show" identifier="toAddCaregiver" id="xyc-Wd-NWi"/>
+                        <segue destination="0ei-Us-RgD" kind="show" identifier="toAddAnimal" id="gtL-jP-cVL"/>
+                        <segue destination="lQ5-Vg-eIZ" kind="show" identifier="toTakeAnimalCaregiver" id="QWK-CY-e7a"/>
+                        <segue destination="rot-v2-d43" kind="show" identifier="toList" id="znX-CM-N6t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="83.705357142857139"/>
+        </scene>
+        <!--Add Animal View Controller-->
+        <scene sceneID="eDY-du-Ca4">
+            <objects>
+                <viewController id="0ei-Us-RgD" customClass="AddAnimalViewController" customModule="Odev2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ghd-0E-e3S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SUE-07-5CE">
+                                <rect key="frame" x="20" y="205" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Water Limit" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RZy-G8-BRV">
+                                <rect key="frame" x="20" y="271" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fl7-6H-tTc">
+                                <rect key="frame" x="118" y="393" width="179" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add Animal🐈🦮">
+                                    <fontDescription key="titleFontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addAnimalButton:" destination="0ei-Us-RgD" eventType="touchUpInside" id="Gy1-Y8-Vdx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Animal Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mvg-qf-dTc">
+                                <rect key="frame" x="27" y="149" width="98" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Yba-9S-AON">
+                                <rect key="frame" x="249" y="140" width="127" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Cat🐈"/>
+                                    <segment title="Dog🦮"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PhN-iM-lQ0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Aak-IH-OnL"/>
+                    <connections>
+                        <outlet property="animalNameText" destination="SUE-07-5CE" id="278-eV-tK9"/>
+                        <outlet property="animalTypeSegmentedControl" destination="Yba-9S-AON" id="pjy-Wl-sJf"/>
+                        <outlet property="animalWaterLimitText" destination="RZy-G8-BRV" id="Jqp-23-aZy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wv4-I8-kE4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2207" y="531"/>
+        </scene>
+        <!--Add Caregiver View Controller-->
+        <scene sceneID="42A-Ti-bvD">
+            <objects>
+                <viewController id="El8-Di-74j" customClass="AddCaregiverViewController" customModule="Odev2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WNs-4x-9po">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="jj7-NS-6yB">
+                                <rect key="frame" x="20" y="108" width="374" height="474"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADD CAREGIVER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpJ-Ur-nuZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="ZCn-MI-3rh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="AMr-tY-nWQ">
+                                        <rect key="frame" x="0.0" y="88" width="374" height="188"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="alW-Ex-pQa">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Experiance" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="im2-dI-O8o">
+                                                <rect key="frame" x="0.0" y="74" width="374" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Qv-be-VDA">
+                                                <rect key="frame" x="0.0" y="138" width="374" height="50"/>
+                                                <color key="backgroundColor" red="1" green="0.90303788770000004" blue="0.9023796127" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="n3s-uU-GdY"/>
+                                                </constraints>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Add Caregiver👩🏽‍🍼🧑🏽‍🍼"/>
+                                                <connections>
+                                                    <action selector="addCaregiverButton:" destination="El8-Di-74j" eventType="touchUpInside" id="Vhv-pC-mXd"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="pep-TL-WAe">
+                                        <rect key="frame" x="0.0" y="324" width="374" height="150"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salary: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSp-BH-orL">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="1BN-AE-Coq"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GuS-Mh-9ZN">
+                                                <rect key="frame" x="0.0" y="100" width="374" height="50"/>
+                                                <color key="backgroundColor" red="1" green="0.81437150089999999" blue="0.82221703400000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="V4T-3o-xdP"/>
+                                                </constraints>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Salary Calculation💵"/>
+                                                <connections>
+                                                    <action selector="salaryCalculation:" destination="El8-Di-74j" eventType="touchUpInside" id="rTa-YT-yLP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3YS-T1-VAw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jj7-NS-6yB" firstAttribute="leading" secondItem="3YS-T1-VAw" secondAttribute="leading" constant="20" id="EZI-zF-sre"/>
+                            <constraint firstItem="jj7-NS-6yB" firstAttribute="top" secondItem="3YS-T1-VAw" secondAttribute="top" constant="20" id="F1e-Ta-MF2"/>
+                            <constraint firstItem="3YS-T1-VAw" firstAttribute="trailing" secondItem="jj7-NS-6yB" secondAttribute="trailing" constant="20" id="OVy-yg-xrM"/>
+                            <constraint firstItem="3YS-T1-VAw" firstAttribute="bottom" secondItem="jj7-NS-6yB" secondAttribute="bottom" constant="280" id="oYp-u8-zAN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="amL-BR-vhU"/>
+                    <connections>
+                        <outlet property="caregiverExperianceText" destination="im2-dI-O8o" id="dE2-Tt-5qa"/>
+                        <outlet property="caregiverInfoLabel" destination="qpJ-Ur-nuZ" id="7PC-qn-PoL"/>
+                        <outlet property="caregiverNameText" destination="alW-Ex-pQa" id="0f3-lZ-Py3"/>
+                        <outlet property="salaryLabel" destination="hSp-BH-orL" id="xNs-Fx-5pD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HdI-xC-dD7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1766.6666666666667" y="-122.54464285714285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="blD-Xj-BI5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9bB-8l-mVD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5xX-X3-aEe">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bIB-71-4xE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1aZ-2c-xqe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
